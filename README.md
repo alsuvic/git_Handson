@@ -116,3 +116,9 @@ git add seqClass.py
 git commit -m "Modified4 script"
 
 Task 18: Through the GitHub webpage, add a README.md file explaining the usage of the script seqClass.py and commit. It can contain just a line, or something more elaborated. Then, pull the commit to your local repository.
+
+git pull
+
+Task 20: Clone ggsashimi repository from guigolab.
+
+git clone https://github.com/guigolab/ggsashimi
