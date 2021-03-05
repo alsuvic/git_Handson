@@ -30,7 +30,9 @@ We check the status of the project.
 
 <code>
   git diff
+  
   git add seqClass.py
+  
   git commit -m "Corrected script"
 </code>
 
@@ -60,8 +62,11 @@ We undo last changes
 
 <code>
   nano seqClass.py
+  
   git add seqClass.py
+  
   git commit -m "Bad script"
+  
   git revert HEAD
 </code>
 
@@ -69,6 +74,7 @@ We undo last changes
 
 <code>
   git branch motif
+  
   git branch
 </code>
 
@@ -76,7 +82,9 @@ We undo last changes
 
 <code>
   git checkout motif
+  
   git branch
+  
   git log
 </code>
 
@@ -84,7 +92,9 @@ We undo last changes
 
 <code>
   gedit seqClass.py
+  
   git add seqClass.py
+  
   git commit -m "Modified script"
 </code>
 
@@ -92,7 +102,9 @@ We undo last changes
 
 <code>
   git checkout master
+  
   git merge motif
+  
   git log
 </code>
 
@@ -100,13 +112,21 @@ We undo last changes
 
 <code>
   nano seqClass.py
+  
   git add seqClass.py
+  
   git commit -m "Modified1 script"
+  
   git checkout motif
+  
   nano seqClass.py
+  
   git add seqClass.py
+  
   git commit -m "Modified2 script"
+  
   git checkout master
+  
   git merge motif
 </code>
 
@@ -114,20 +134,31 @@ We undo last changes
 
 <code>
   nano seqClass.py
+  
   git add seqClass.py
+  
   git commit -m "Modified3 script"
+  
   git checkout motif
+  
   nano seqClass.py
+  
   git add seqClass.py
+  
   git commit -m "Modified4 script"
+  
   git checkout master
+  
   git merge motif
 </code>
 
 **Task 15**: Delete the content of the line as it appears in the master branch as well as all Git's special markings including the words HEAD and motif. Then save the file, add and commit your changes.
 
-<code>nano seqClass.py
+<code>
+  nano seqClass.py
+  
   git add seqClass.py
+  
   git commit -m "Modified4 script"
 </code>
 
@@ -139,7 +170,9 @@ We undo last changes
 
 <code>
   gedit seqClass.py
+  
   git add seqClass.py
+  
   git commit -m "Modified4 script"
 </code>
 
@@ -164,14 +197,24 @@ Stage, commit and push your changes in the fix branch to your GitHub repository.
 
 <code>
   git branch fix
+  
   git checkout fix
+  
   gedit seqClass.py
+  
   git add seqClass.py
+  
   git commit -m "Comments script"
+  
   git checkout master
+  
   git merge fix
+  
   git pull
+  
   git push
+  
   git checkout fix
+  
   git push -u origin fix
 </code>
