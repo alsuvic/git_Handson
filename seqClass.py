@@ -3,6 +3,7 @@
 import sys, re
 from argparse import ArgumentParser
 
+# read arguments
 parser = ArgumentParser(description = 'Classify a sequence as DNA or RNA')
 parser.add_argument("-s", "--seq", type = str, required = True, help = "Input sequence")
 parser.add_argument("-m", "--motif", type = str, required = False, help = "Motif")
@@ -11,9 +12,12 @@ if len(sys.argv) == 1:
     parser.print_help()
     sys.exit(1)
 
+# gbet arguments
 args = parser.parse_args()
 
+# change to uppercase
 args.seq = args.seq.upper()                 # Note we just added this line
+# indicate the NA
 if re.search('^[ACGTU]+$', args.seq):
     if re.search('T', args.seq):
         print ('The sequence is DNA')
