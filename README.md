@@ -28,11 +28,11 @@ We check the status of the project.
 
 **Task 5**: use this command to check the difference between the working directory and the staging area. Changes to the file are marked with a + and are indicated in green. Then commit the changes in seqClass.py.
 
-<code>git diff</code>
-
-<code>git add seqClass.py</code>
-
-<code>git commit -m "Corrected script"</code>
+<code>
+  git diff
+  git add seqClass.py
+  git commit -m "Corrected script"
+</code>
 
 **Task 6**: log a list of your commits.
 
@@ -58,91 +58,78 @@ We undo last changes
 
 **Task 9**: Edit your script to modify the help message, stage it and commit. Then use git revert to undo your commit.
 
-<code>nano seqClass.py</code>
-
-<code>git add seqClass.py</code>
-
-<code>git commit -m "Bad script"</code>
-
-<code>git revert HEAD</code>
+<code>
+  nano seqClass.py
+  git add seqClass.py
+  git commit -m "Bad script"
+  git revert HEAD
+</code>
 
 **Task 10**: Create a new branch named motif and check on which branch you are located.
 
-<code>git branch motif</code>
-
-<code>git branch</code>
+<code>
+  git branch motif
+  git branch
+</code>
 
 **Task 11**: Switch branch to motif. Verify that you switched branches succesfully and that the commit history of both branches is identical.
 
-<code>git checkout motif</code>
-
-<code>git branch</code>
-
-<code>git log</code>
+<code>
+  git checkout motif
+  git branch
+  git log
+</code>
 
 **Task 12**: Modify seqClass.py
 
-<code>gedit seqClass.py</code>
-
-<code>git add seqClass.py</code>
-
-<code>git commit -m "Modified script"</code>
+<code>
+  gedit seqClass.py
+  git add seqClass.py
+  git commit -m "Modified script"
+</code>
 
 **Task 12**: Switch again to the master branch and merge your motif branch back to master.
 
-<code>git checkout master</code>
-
-<code>git merge motif</code>
-
-<code>git log</code>
+<code>
+  git checkout master
+  git merge motif
+  git log
+</code>
 
 **Task 13**: In the master branch, modify the message that seqClass.py prints when it finds the motif, add and commit the changes. Then, switch to the motif branch and modify the message that seqClass.py prints when it does not find the motif, add and commit the changes. Finally, merge the motif branch back into master.
 
-<code>nano seqClass.py</code>
-
-<code>git add seqClass.py</code>
-
-<code>git commit -m "Modified1 script"</code>
-
-<code>git checkout motif</code>
-
-<code>nano seqClass.py</code>
-
-<code>git add seqClass.py</code>
-
-<code>git commit -m "Modified2 script"</code>
-
-<code>git checkout master</code>
-
-<code>git merge motif</code>
+<code>
+  nano seqClass.py
+  git add seqClass.py
+  git commit -m "Modified1 script"
+  git checkout motif
+  nano seqClass.py
+  git add seqClass.py
+  git commit -m "Modified2 script"
+  git checkout master
+  git merge motif
+</code>
 
 **Task 14**: Repeat the previous task but modifying in both cases the message that seqClass.py prints when it finds the motif.
 
-<code>nano seqClass.py</code>
-
-<code>git add seqClass.py</code>
-
-<code>git commit -m "Modified3 script"</code>
-
-<code>git checkout motif</code>
-
-<code>nano seqClass.py</code>
-
-<code>git add seqClass.py</code>
-
-<code>git commit -m "Modified4 script"</code>
-
-<code>git checkout master</code>
-
-<code>git merge motif</code>
+<code>
+  nano seqClass.py
+  git add seqClass.py
+  git commit -m "Modified3 script"
+  git checkout motif
+  nano seqClass.py
+  git add seqClass.py
+  git commit -m "Modified4 script"
+  git checkout master
+  git merge motif
+</code>
 
 **Task 15**: Delete the content of the line as it appears in the master branch as well as all Git's special markings including the words HEAD and motif. Then save the file, add and commit your changes.
 
-<code>nano seqClass.py</code>
-
-<code>git add seqClass.py</code>
-
-<code>git commit -m "Modified4 script"</code>
+<code>nano seqClass.py
+  git add seqClass.py
+  git commit -m "Modified4 script"
+</code>
 
 **Task 16**: Delete the motif branch.
 
@@ -150,11 +137,11 @@ We undo last changes
 
 **Task 17**: Edit your script to add some comment lines explaining what every piece of code does, stage it and commit. Then push the commits to your remote repository. The changes will be visible at GitHub.
 
-<code>gedit seqClass.py</code>
-
-<code>git add seqClass.py</code>
-
-<code>git commit -m "Modified4 script"
+<code>
+  gedit seqClass.py
+  git add seqClass.py
+  git commit -m "Modified4 script"
+</code>
 
 **Task 18**: Through the GitHub webpage, add a README.md file explaining the usage of the script seqClass.py and commit. It can contain just a line, or something more elaborated. Then, pull the commit to your local repository.
 
