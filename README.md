@@ -28,12 +28,9 @@ We check the status of the project.
 
 **Task 5**: use this command to check the difference between the working directory and the staging area. Changes to the file are marked with a + and are indicated in green. Then commit the changes in seqClass.py.
 
-```
-  git diff
+```git diff
   git add seqClass.py
-  git commit -m "Corrected script"
-  
-```
+  git commit -m "Corrected script"```
 
 **Task 6**: log a list of your commits.
 
