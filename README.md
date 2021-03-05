@@ -34,6 +34,7 @@ We check the status of the project.
   git add seqClass.py
   
   git commit -m "Corrected script"
+  
 </code>
 
 **Task 6**: log a list of your commits.
