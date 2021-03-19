@@ -154,26 +154,30 @@ git commit -m "Modified4 script"
 
 ## Exercise 1:
 
-Make a new branch called fix and move to it.
-
-Fix the seqClass.py script so that it is able to classify correctly any RNA or DNA sequence.
-
-We change our code and add some notes.
-
-Merge the fix branch back to master.
-
-Make sure you add comments to explain your changes.
-
-Stage and commit the changes on master in your local repository.
-
-Push your commits on master to your GitHub repository.
-
-Stage, commit and push your changes in the fix branch to your GitHub repository.
+### Make a new branch called fix and move to it.
 
 ```
 git branch fix
 git checkout fix
+```
+
+### Fix the seqClass.py script so that it is able to classify correctly any RNA or DNA sequence.
+
+We change our code and add some notes.
+
+```
 gedit seqClass.py
+```
+
+![image](https://user-images.githubusercontent.com/80123456/111839228-c435e500-88fa-11eb-87ac-6b4137b98497.png)
+
+### Merge the fix branch back to master.
+### Make sure you add comments to explain your changes.
+### Stage and commit the changes on master in your local repository.
+### Push your commits on master to your GitHub repository.
+### Stage, commit and push your changes in the fix branch to your GitHub repository.
+
+```
 git add seqClass.py
 git commit -m "Comments script"
 git checkout master
